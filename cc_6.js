@@ -29,7 +29,7 @@ class Manager extends Employee {
 const employee1 = new Employee("JimJim", "Finance")
 const employee2 = new Employee("TimTim", "HR")
 const employee3 = new Employee("BimBim", "Marketing")
-const employee4 = new Employee("JimJim", "Engineering")
+const employee4 = new Employee("LimLim", "Engineering")
 
 const manager1 = new Manager("TheBigMan", "Logistics", 10)
 const manager2 = new Manager("TheLargeMan", "Product Design", 5)
@@ -60,3 +60,17 @@ class Company {
     }
 
 }
+
+// Step 6: Instantiate Company Class
+
+const myCompany = new Company()
+
+myCompany.addEmployee(employee1)
+myCompany.addEmployee(employee2)
+myCompany.addEmployee(employee3)
+myCompany.addEmployee(employee4)
+myCompany.addEmployee(manager1)
+myCompany.addEmployee(manager2)
+
+console.log("Company Employee List")
+myCompany.listEmployees()
