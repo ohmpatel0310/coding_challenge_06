@@ -38,6 +38,25 @@ console.log(employee1.describe())
 console.log(employee2.describe())
 console.log(employee3.describe())
 console.log(employee4.describe())
+
 console.log(manager1.describe())
 console.log(manager2.describe())
 
+// Step 5: Creating Company Class with Property Employees
+
+class Company {
+    constructor() {
+        this.employees = []
+    }
+
+    addEmployee(employee) {
+        this.employees.push(employee)
+    }
+
+    listEmployees() {
+        this.employees.forEach(employee => {
+            console.log(employee.describe())
+        })
+    }
+
+}
